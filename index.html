@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Classroom Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Online Classroom Portal</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Teacher Section -->
+        <section class="section teacher">
+            <h2>Teacher: Share Assignment</h2>
+            <div class="upload-box">
+                <input type="file" id="assignmentInput">
+                <button onclick="uploadAssignment()">Share Assignment</button>
+            </div>
+            <p id="teacherMessage"></p>
+        </section>
+
+        <!-- Student Section -->
+        <section class="section student">
+            <h2>Student: Assignments</h2>
+            <div id="assignmentList" class="cards-container">
+                <!-- Assignment cards will appear here -->
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Online Classroom Portal
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
